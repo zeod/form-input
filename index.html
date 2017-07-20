@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<style>
+* {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#formnumber tr:nth-child(2n+3) {
+	background-color: #DADCDB;
+}
+
+#formnumber {
+	border: solid 1px #C0C0C0;
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	height: 500px;
+	width: 700px;
+}
+
+#formnumber tbody tr td {
+border: 1px solid black;
+}
+
+.number1 input {
+	width: 60px;
+	height: 60px;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px solid red;
+	border-radius: 10px;
+	font-size: 16pt;
+}
+
+.number2 input {
+	width: 60px;
+	height: 60px;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px solid blue;
+	border-radius: 10px;
+	font-size: 16pt;
+}
+
+.iconletter {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 7px;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+}
+
+#submit {
+	padding: 10px;
+}
+</style>
+</head>
+
+<body>
+<table id="formnumber" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<form action="action_page.php" method="post">
+  <tr>
+    <th style= "height: 40px;"><br></th>
+    <th style= "height: 40px;"><br></th>
+    <th style= "height: 40px;">Huidige Score</th>
+    <th style= "height: 40px;">Gewenste Score</th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">A</p></th>
+    <th>
+    <p>Mindset</p>
+    <ol>
+    <li>Voel ik mij overtuigend en deskundig?</li>
+    <li>Heb ik altijd een positieve stemming?</li>
+    <li>Kan ik omgaan met tegenslag?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs1" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs1" min="1" max="10" required></th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">B</p></th>
+    <th>
+    <p>Doelgerichtheid</p>
+    <ol>
+    <li>Waar staat mijn merk/organisatie voor?</li>
+    <li>Haal ik het maximale uit mijn gesprekken?</li>
+    <li>Weet ik wat ik wil bereiken?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs2" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs2" min="1" max="10" required></th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">C</p></th>
+    <th>
+    <p>Beïnvloeding</p>
+    <ol>
+    <li>Wat is mijn bijdrage aan het team?</li>
+    <li>Luisteren andere mensen naar mij?</li>
+    <li>Ben ik een empatisch persoon?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs3" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs3" min="1" max="10" required></th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">D</p></th>
+    <th>
+    <p>Analyse</p>
+    <ol>
+    <li>Kan ik goed luisteren?</li>
+    <li>Stel ik de juiste vragen?</li>
+    <li>Voelen mensen zich door mij begrepen?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs4" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs4" min="1" max="10" required></th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">E</p></th>
+    <th>
+    <p>Verleiden</p>
+    <ol>
+    <li>Ben ik geloofwaardig?</li>
+    <li>Maak ik mijn aanbod aantrekkelijk genoeg?</li>
+    <li>Kan ik een boodschap goed brengen?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs5" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs5" min="1" max="10" required></th>
+  </tr>
+    <tr>
+    <th><p class="iconletter">F</p></th>
+    <th>
+    <p>Ontwikkelen</p>
+    <ol>
+    <li>Kan ik andere mensen motiveren?</li>
+    <li>Maak ik mensen beter?</li>
+    <li>Ben ik tevreden over mijn resultaten?</li>
+    </ol>
+    </th>
+    <th class="number1"><input style="width: 60px; 60px;" type="number" name="hs6" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 60px; 60px;" type="number" name="gs6" min="1" max="10" required></th>
+  </tr>
+  <tr>
+  <th id= "submit" colspan="4">  <input name="submit1" type="submit" value="Submit">
+  </th>
+  </tr>
+  </form>
+  </tbody>
+  </table>
+</body>
+</html>
