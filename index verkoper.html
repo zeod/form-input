@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<style>
+* {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#formnumber tr:nth-child(2n+3) {
+	background-color: #DADCDB;
+}
+
+#formnumber {
+	border: solid 1px #C0C0C0;
+	height: 500px;
+	width: 700px;
+}
+
+#formnumber tbody tr td {
+border: 1px solid black;
+}
+
+.number1 input {
+	margin: 10px;
+	width: 150px;
+	height: 150px;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px solid red;
+	border-radius: 10px;
+font-size: 45pt;
+}
+
+.number2 input {
+	margin: 10px;
+	width: 150px;
+	height: 150px;
+	text-align:center;
+	vertical-align:middle;
+	border: 1px solid blue;
+	border-radius: 10px;
+font-size: 45pt;
+}
+
+.iconletter {
+	padding: 14px;
+	border-radius: 35px;
+	background-color: black;
+	color: white;
+	width: 40px;
+	height: 40px;
+	text-align:center;
+	vertical-align:middle;
+	margin: auto;
+	font-size: 30pt;
+}
+
+#submit {
+	padding: 10px;
+}
+
+#submbtn {
+	padding: 15px;
+	font-size: 25pt;
+	background-color: #F38A1E;
+	color: white;
+	border-radius: 15px;
+	box-shadow:none !important;
+}
+
+ol {
+width: 85%;
+text-align: center; 
+vertical-align: middle;
+margin:auto;
+padding-bottom: 15px;
+font-size: 30pt;
+}
+
+.titel {
+	font-size: 30pt;
+}
+</style>
+</head>
+
+<body>
+<table id="formnumber" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+<tbody>
+<form action="action_page_verkoper.php" method="post">
+  <tr>
+    <th style= "height: 40px;" colspan="2"><br></th>
+  </tr>
+    <tr>
+    <th colspan="2"><p class="iconletter">A</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Mindset</p>
+    <ol>
+    <li>Kom ik zelfverzekerd over? </li>
+    <li>Heb ik altijd een positieve stemming? </li>
+    <li>Kan ik omgaan met tegenslag?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs1" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs1" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th colspan="2"><p class="iconletter">B</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Doelgerichtheid</p>
+   <ol>
+    <li>Waar staat mijn merk/organisatie voor?</li>
+    <li>Haal ik het maximale uit mijn gesprekken?</li>
+    <li>Weet ik wat ik wil bereiken?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs2" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs2" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th colspan="2"><p class="iconletter">C</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Aanvang</p>
+    <ol>
+    <li>Kan ik elk klant-type herkennen?</li>
+    <li>Pas ik mijn gedrag aan op elke klant?</li>
+    <li>Maak ik gemakkelijk de klik?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs3" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs3" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th colspan="2"><p class="iconletter">D</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Analyse</p>
+    <ol>
+    <li>Kan ik goed luisteren?</li>
+    <li>Stel ik de juiste vragen?</li>
+    <li>Voelen mensen zich door mij begrepen?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+      <th class="number1"><input style="width: 150px;" type="number" name="hs4" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs4" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th colspan="2"><p class="iconletter">E</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Argumenteren</p>
+    <ol>
+    <li>Hoe overtuigend ben ik?</li>
+    <li>Maak ik mijn aanbod aantrekkelijk genoeg?</li>
+    <li>Ziet mijn klant de voordelen?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs5" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs5" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th colspan="2"><p class="iconletter">F</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Afsluiten</p>
+    <ol>
+    <li>Kan ik omgaan met weerstand?</li>
+    <li>Hou ik de regie in eigen handen?</li>
+    <li>Ben ik tevreden over mijn resultaten?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th style= "font-size: 26pt; height: 40px;">Huidige Score</th>
+    <th style= "font-size: 26pt; height: 40px;">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs6" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs6" min="1" max="10" required></th>
+  </tr>
+  <tr>
+  <th id="submit" colspan="2">  <input  id="submbtn" name="submit1" type="submit" value="VERZEND">
+  </th>
+  </tr>
+  </form>
+  </tbody>
+  </table>
+</body>
+</html>
