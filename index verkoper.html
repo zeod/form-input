@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script  type="text/javascript" src="js/iscroll-zoom.js"></script>
+<script type="text/javascript">
+function loaded () {
+	position = document.getElementById('position');
+        myScroll = new IScroll('#wrapper', {
+                zoom: false,
+		bounce: true,
+		bounceEasing: 'quadratic',
+		scrollbars: true,
+		fadeScrollbars: true,
+		
+		interactiveScrollbars: true,
+		shrinkScrollbars: 'clip',
+                scrollX: true,
+                scrollY: true,
+                mouseWheel: true,
+		
+		probeType: 3,
+		useTransition: false,
+	 disablePointer: true
+
+        });
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+    <div class="scroller">
+        <div class="content">
+<table id="formnumber" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+<tbody>
+<form action="action_page_verkoper.php" method="post">
+  <tr>
+    <th style= "height: 40px;" colspan="2"><br></th>
+  </tr>
+    <tr>
+    <th class="iconaround" colspan="2"><div class="iconletter">A</div></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Mindset</p>
+    <ol>
+    <li>Kom ik zelfverzekerd over? </li>
+    <li>Heb ik altijd een positieve stemming? </li>
+    <li>Kan ik omgaan met tegenslag?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs1" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs1" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th class="iconaround" colspan="2"><p class="iconletter">B</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Doelgerichtheid</p>
+   <ol>
+    <li>Waar staat mijn merk/organisatie voor?</li>
+    <li>Haal ik het maximale uit mijn gesprekken?</li>
+    <li>Weet ik wat ik wil bereiken?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs2" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs2" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th class="iconaround" colspan="2"><p class="iconletter">C</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Aanvang</p>
+    <ol>
+    <li>Kan ik elk klant-type herkennen?</li>
+    <li>Pas ik mijn gedrag aan op elke klant?</li>
+    <li>Maak ik gemakkelijk de klik?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs3" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs3" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th class="iconaround" colspan="2"><p class="iconletter">D</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Analyse</p>
+    <ol>
+    <li>Kan ik goed luisteren?</li>
+    <li>Stel ik de juiste vragen?</li>
+    <li>Voelen mensen zich door mij begrepen?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+      <th class="number1"><input style="width: 150px;" type="number" name="hs4" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs4" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th class="iconaround" colspan="2"><p class="iconletter">E</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Argumenteren</p>
+    <ol>
+    <li>Hoe overtuigend ben ik?</li>
+    <li>Maak ik mijn aanbod aantrekkelijk genoeg?</li>
+    <li>Ziet mijn klant de voordelen?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs5" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs5" min="1" max="10" required></th>
+  </tr>
+     <tr>
+    <th class="iconaround" colspan="2"><p class="iconletter">F</p></th>
+    </tr>
+    <tr>
+    <th colspan="2">
+    <p class="titel">Afsluiten</p>
+    <ol>
+    <li>Kan ik omgaan met weerstand?</li>
+    <li>Hou ik de regie in eigen handen?</li>
+    <li>Ben ik tevreden over mijn resultaten?</li>
+    </ol>
+    </th>
+    </tr>
+    <tr>
+    <th class="score">Huidige Score</th>
+    <th class="score">Gewenste Score</th>
+</tr>
+    <tr>
+    <th class="number1"><input style="width: 150px;" type="number" name="hs6" min="1" max="10" required></th>
+    <th class="number2"><input style="width: 150px;" type="number" name="gs6" min="1" max="10" required></th>
+  </tr>
+  <tr>
+  <th id="submit" colspan="2">  <input  id="submbtn" name="submit1" type="submit" value="VERZEND">
+  </th>
+  </tr>
+  </form>
+  </tbody>
+  </table>
+          </div>
+    </div>
+</div>
+</body>
+</html>
